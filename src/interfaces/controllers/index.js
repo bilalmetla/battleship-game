@@ -1,3 +1,7 @@
 
 
-export * as SayHelloController from './sayHelloController'
+import SayHelloController from './sayHelloController'
+
+export {
+    SayHelloController
+}

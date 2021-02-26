@@ -1,5 +1,10 @@
 'use strict';
 
-export const sayHello = (name = 'world') => {
+const sayHello = (name = 'world') => {
   return `Hello ${name}!`;
 };
+
+const SayHelloUseCases = {
+  sayHello
+}
+export default SayHelloUseCases

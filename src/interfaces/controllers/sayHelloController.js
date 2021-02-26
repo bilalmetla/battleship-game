@@ -10,3 +10,11 @@ export const sayHelloPerson = (name)=>{
    
     return SayHelloUseCases.sayHello(name)
 }
+
+const SayHelloController ={
+    sayHelloWorld,
+    sayHelloPerson
+}
+
+
+export default  SayHelloController

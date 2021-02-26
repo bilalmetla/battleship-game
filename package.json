@@ -6,7 +6,7 @@
   "scripts": {
     "docs": "./node_modules/.bin/jsdoc -c ./.jsdoc.conf.json",
     "dev": "nodemon --exec node -r esm index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,21 @@
   },
   "devDependencies": {
     "esm": "^3.2.25",
+    "jest": "^26.6.3",
+    "jest-esm-transformer": "^1.0.0",
     "jsdoc": "^3.6.6",
     "nodemon": "^2.0.7"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js}",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/coverage/**"
+    ],
+    "testURL": "http://localhost:3000/",
+    "transform": {
+      ".js": "jest-esm-transformer"
+   }
   }
 }
