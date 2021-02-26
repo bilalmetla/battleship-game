@@ -1,14 +1,12 @@
 import express from 'express'
-import  bodyParser from "body-parser";
 import router from "../../interfaces/http";
+import middlewares from "./express_middlewares";
+
 
 const app = express()
-// parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }))
 
-// parse application/json
-app.use(bodyParser.json())
-
+/**loading and integrating middleware into server */
+middlewares.forEach(md=>md(app))
 
 
 const apiRoot = '/api'//process.env.API_ROOT
