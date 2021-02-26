@@ -1,0 +1,27 @@
+{
+  "name": "battleship-game",
+  "version": "1.0.0",
+  "description": "its a task.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec node -r esm index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bilalmetla/battleship-game.git"
+  },
+  "author": "bilalmetla@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bilalmetla/battleship-game/issues"
+  },
+  "homepage": "https://github.com/bilalmetla/battleship-game#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.7"
+  }
+}
