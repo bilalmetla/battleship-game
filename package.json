@@ -4,6 +4,7 @@
   "description": "its a task.",
   "main": "index.js",
   "scripts": {
+    "docs":"./node_modules/.bin/jsdoc -c ./.jsdoc.conf.json",
     "dev": "nodemon --exec node -r esm index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +23,7 @@
   },
   "devDependencies": {
     "esm": "^3.2.25",
+    "jsdoc": "^3.6.6",
     "nodemon": "^2.0.7"
   }
 }

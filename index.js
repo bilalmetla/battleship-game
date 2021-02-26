@@ -1,6 +1,6 @@
 'use strict';
 
- import {server} from './infrastructure/servers/';
+ import {server} from './src/infrastructure/servers/';
 
 
 /**
